@@ -1,6 +1,5 @@
 .about {
   min-height: 100vh;
-  padding-top: 80px;
 
   &__hero {
     height: 60vh;
@@ -165,7 +164,6 @@
 
 @media (max-width: 768px) {
   .about {
-    padding-top: 60px;
 
     &__hero {
       height: 50vh;

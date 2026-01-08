@@ -1,6 +1,5 @@
 .contact {
   min-height: 100vh;
-  padding-top: 80px;
 
   &__hero {
     height: 50vh;
@@ -200,7 +199,6 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding-top: 60px;
 
     &__hero {
       height: 40vh;

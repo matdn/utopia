@@ -1,7 +1,6 @@
 .pricing {
   min-height: 100vh;
   background: linear-gradient(to bottom, #e8e8e8 0%, #e8e8e8 50%, #0a1628 50%, #0a1628 100%);
-  padding-top: 80px;
 
   &__logo {
     display: flex;
@@ -291,7 +290,6 @@
 
 @media (max-width: 768px) {
   .pricing {
-    padding-top: 60px;
 
     &__logo {
       padding: 40px 0;
