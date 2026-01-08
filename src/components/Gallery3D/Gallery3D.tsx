@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import { PerspectiveCamera } from '@react-three/drei';
 import { InfiniteGallery } from './InfiniteGallery';
 import CustomCursor from '@/components/CustomCursor';
 import ImagePanel from '@/components/ImagePanel';

@@ -1,0 +1,7 @@
+.galleryPage {
+  &__footer {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

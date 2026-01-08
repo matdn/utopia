@@ -5,7 +5,7 @@
   width: 500px;
   height: 100vh;
   background: #fff;
-  z-index: 10001;
+  z-index: 99999;
   transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -22,7 +22,7 @@
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 10000;
+    z-index: 99998;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease;
@@ -140,14 +140,30 @@
 @media (max-width: 768px) {
   .imagePanel {
     width: 100vw;
-    right: -100vw;
+    // right: -100vw;
+    box-shadow: none;
+
+    &__close {
+      top: 16px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background: rgba(255, 255, 255, 1);
+      }
+    }
 
     &__content {
-      padding: 16px;
+      padding: 70px 20px 20px;
     }
 
     &__imageContainer {
       margin-bottom: 24px;
+      border-radius: 0;
+      aspect-ratio: 3/4;
     }
 
     &__title {
@@ -164,16 +180,39 @@
       font-size: 14px;
     }
 
-    &__description p {
-      font-size: 13px;
+    &__description {
+      padding-top: 24px;
+
+      p {
+        font-size: 13px;
+      }
     }
   }
 }
 
 @media (max-width: 480px) {
   .imagePanel {
+    &__content {
+      padding: 70px 16px 16px;
+    }
+
+    &__close {
+      top: 12px;
+      right: 12px;
+    }
+
+    &__imageContainer {
+      margin-bottom: 20px;
+    }
+
     &__title {
       font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    &__meta {
+      gap: 12px;
+      margin-bottom: 20px;
     }
 
     &__metaLabel {
@@ -184,8 +223,12 @@
       font-size: 13px;
     }
 
-    &__description p {
-      font-size: 12px;
+    &__description {
+      padding-top: 20px;
+
+      p {
+        font-size: 12px;
+      }
     }
   }
 }
