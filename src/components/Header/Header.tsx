@@ -34,7 +34,8 @@ export default function Header() {
       <nav className={`${styles.header__nav} ${isMenuOpen ? styles['header__nav--open'] : ''}`}>
         <Link href="/" className={styles.header__link} onClick={closeMenu}>Accueil</Link>
         <Link href="/galerie" className={styles.header__link} onClick={closeMenu}>Galerie</Link>
-        <Link href="/pricing" className={styles.header__link} onClick={closeMenu}>Pricing</Link>
+        <Link href="/pricing" className={styles.header__link} onClick={closeMenu}>Nos offres</Link>
+        <Link href="/shop" className={styles.header__link} onClick={closeMenu}>Shop</Link>
         <Link href="/a-propos" className={styles.header__link} onClick={closeMenu}>À propos</Link>
         <Link href="/contact" className={styles.header__link} onClick={closeMenu}>Contact</Link>
       </nav>

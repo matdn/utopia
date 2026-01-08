@@ -20,6 +20,7 @@ export default function Footer() {
             <Link href="/" className={styles.footer__link}>Accueil</Link>
             <Link href="/galerie" className={styles.footer__link}>Galerie</Link>
             <Link href="/pricing" className={styles.footer__link}>Pricing</Link>
+            <Link href="/shop" className={styles.footer__link}>Shop</Link>
             <Link href="/a-propos" className={styles.footer__link}>À propos</Link>
             <Link href="/contact" className={styles.footer__link}>Contact</Link>
           </nav>

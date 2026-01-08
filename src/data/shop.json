@@ -1,0 +1,27 @@
+{
+  "book": {
+    "id": "guide-petit-breton",
+    "title": "Le guide du petit breton",
+    "subtitle": "Découvrez la Bretagne autrement",
+    "price": "29.90€",
+    "author": "Tanguy Larfouillut",
+    "pages": 240,
+    "format": "15 x 21 cm",
+    "year": "2024",
+    "description": "Un voyage photographique à travers les terres bretonnes. Ce guide unique mêle photographies d'exception, anecdotes locales et secrets bien gardés pour vous faire découvrir la Bretagne sous un angle inédit.",
+    "features": [
+      "240 pages de photographies exclusives",
+      "Des lieux secrets révélés",
+      "Histoires et légendes bretonnes",
+      "Conseils de photographe professionnel",
+      "Carte détaillée des spots photo"
+    ],
+    "images": {
+      "cover": "/images/shop/guide-breton-cover.jpg",
+      "spread1": "/images/shop/guide-breton-spread1.jpg",
+      "spread2": "/images/shop/guide-breton-spread2.jpg",
+      "detail": "/images/shop/guide-breton-detail.jpg"
+    },
+    "available": true
+  }
+}
