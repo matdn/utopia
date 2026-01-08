@@ -1,0 +1,52 @@
+{
+  "images": {
+    "loader-1.png": {
+      "title": "Surf session",
+      "location": "Biarritz, France",
+      "date": "15 août 2025",
+      "description": "Une session de surf matinale exceptionnelle sur les vagues de Biarritz. Les conditions étaient parfaites avec une houle constante et un vent offshore qui sculptait les vagues à la perfection."
+    },
+    "loader-2.png": {
+      "title": "Ocean view",
+      "location": "Côte basque",
+      "date": "20 juillet 2025",
+      "description": "Vue panoramique sur l'océan Atlantique depuis les falaises de la côte basque. La lumière dorée du coucher de soleil crée une atmosphère magique et apaisante."
+    },
+    "loader-3.png": {
+      "title": "Wave riding",
+      "location": "Hossegor, France",
+      "date": "5 septembre 2025",
+      "description": "Moment intense capturé lors d'une session de surf à Hossegor, connue mondialement pour ses vagues puissantes. Le tube parfait et la technique du surfeur illustrent la beauté de ce sport."
+    },
+    "loader-4.png": {
+      "title": "Beach sunset",
+      "location": "Capbreton",
+      "date": "12 juin 2025",
+      "description": "Le soleil se couche sur la plage de Capbreton, peignant le ciel de teintes orangées et roses. Les silhouettes des promeneurs se découpent contre cette toile naturelle spectaculaire."
+    },
+    "loader-5.png": {
+      "title": "Coastal life",
+      "location": "Anglet, France",
+      "date": "28 août 2025",
+      "description": "Scène de vie quotidienne sur le littoral d'Anglet. Entre surfeurs, baigneurs et familles, la plage s'anime dans une ambiance estivale décontractée typique du Pays basque."
+    },
+    "section-1.jpg": {
+      "title": "Mountain peak",
+      "location": "Pyrénées",
+      "date": "3 octobre 2025",
+      "description": "Sommet majestueux des Pyrénées capturé au lever du jour. La neige fraîche contraste avec le ciel bleu profond, offrant un spectacle grandiose de la nature sauvage."
+    },
+    "section-2.jpg": {
+      "title": "City lights",
+      "location": "Paris, France",
+      "date": "18 novembre 2025",
+      "description": "Paris s'illumine à la tombée de la nuit. Les lumières de la ville créent une ambiance urbaine vibrante, capturant l'essence même de la ville lumière et son énergie nocturne."
+    },
+    "section-3.jpg": {
+      "title": "Forest trail",
+      "location": "Landes, France",
+      "date": "25 avril 2025",
+      "description": "Sentier forestier serpentant à travers la forêt des Landes. La lumière filtre doucement à travers les pins, créant des jeux d'ombres et de lumières sur le chemin couvert de fougères."
+    }
+  }
+}

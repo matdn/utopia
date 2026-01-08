@@ -1,0 +1,425 @@
+.pricing {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e8e8e8 0%, #e8e8e8 50%, #0a1628 50%, #0a1628 100%);
+  padding-top: 80px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  &__logoText {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: #000;
+  }
+
+  &__packsWrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 40px 0 80px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  &__packs {
+    display: flex;
+    gap: 30px;
+    padding: 0 60px;
+    min-width: min-content;
+  }
+
+  &__card {
+    min-width: 550px;
+    max-width: 550px;
+    background: #6078a2;
+    border-radius: 0;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    flex-shrink: 0;
+
+    &:nth-child(2) {
+      background: #324f88;
+    }
+
+    &:nth-child(3) {
+      background: #1a2332;
+    }
+  }
+
+  &__cardHeader {
+    margin-bottom: 30px;
+  }
+
+  &__cardTitle {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__cardPrice {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+
+  &__cardContent {
+    flex: 1;
+    margin-bottom: 30px;
+  }
+
+  &__cardDescription {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.6;
+    white-space: pre-line;
+  }
+
+  &__cardCta {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: lowercase;
+    padding: 12px 24px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+
+  &__contact {
+    background: #0a1628;
+    padding: 80px 60px 100px;
+  }
+
+  &__contactTitle {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 60px;
+    text-transform: lowercase;
+  }
+
+  &__form {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__formRow {
+    margin-bottom: 40px;
+  }
+
+  &__formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__formLabel {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 12px;
+    text-transform: lowercase;
+  }
+
+  &__formInput,
+  &__formSelect,
+  &__formTextarea {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 12px 16px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+      text-transform: lowercase;
+    }
+
+    &:focus {
+      border-bottom-color: #fff;
+    }
+  }
+
+  &__formTextarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  &__formSelect {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23fff' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+
+    option {
+      background: #0a1628;
+      color: #fff;
+    }
+  }
+
+  &__formSubmit {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: lowercase;
+    padding: 14px 32px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+    float: right;
+
+    &:hover {
+      background: #fff;
+      color: #0a1628;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pricing {
+    &__card {
+      min-width: 450px;
+      max-width: 450px;
+    }
+
+    &__contact {
+      padding: 70px 40px 90px;
+    }
+
+    &__contactTitle {
+      font-size: 42px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricing {
+    &__logoText {
+      font-size: 100px;
+    }
+
+    &__packs {
+      padding: 0 40px;
+    }
+
+    &__card {
+      min-width: 400px;
+      max-width: 400px;
+      padding: 35px 25px;
+    }
+
+    &__cardTitle {
+      font-size: 22px;
+    }
+
+    &__cardDescription {
+      font-size: 12px;
+    }
+
+    &__contact {
+      padding: 60px 40px 80px;
+    }
+
+    &__contactTitle {
+      font-size: 38px;
+      margin-bottom: 50px;
+    }
+
+    &__formGrid {
+      gap: 35px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding-top: 60px;
+
+    &__logo {
+      padding: 40px 0;
+    }
+
+    &__logoText {
+      font-size: 80px;
+    }
+
+    &__packsWrapper {
+      padding: 30px 0 60px;
+    }
+
+    &__packs {
+      padding: 0 20px;
+    }
+
+    &__card {
+      min-width: 320px;
+      max-width: 320px;
+      padding: 30px 20px;
+    }
+
+    &__cardTitle {
+      font-size: 20px;
+    }
+
+    &__cardDescription {
+      font-size: 11px;
+    }
+
+    &__contact {
+      padding: 50px 20px 60px;
+    }
+
+    &__contactTitle {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    &__formGrid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    &__formLabel {
+      font-size: 13px;
+    }
+
+    &__formInput,
+    &__formSelect,
+    &__formTextarea {
+      font-size: 12px;
+    }
+
+    &__formSubmit {
+      font-size: 13px;
+      width: 100%;
+      float: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing {
+    &__logo {
+      padding: 30px 0;
+    }
+
+    &__logoText {
+      font-size: 60px;
+    }
+
+    &__card {
+      min-width: 280px;
+      max-width: 280px;
+      padding: 25px 16px;
+    }
+
+    &__cardHeader {
+      margin-bottom: 20px;
+    }
+
+    &__cardTitle {
+      font-size: 18px;
+    }
+
+    &__cardPrice {
+      font-size: 11px;
+    }
+
+    &__cardDescription {
+      font-size: 10px;
+    }
+
+    &__cardCta {
+      font-size: 11px;
+      padding: 10px 20px;
+    }
+
+    &__contact {
+      padding: 40px 16px 50px;
+    }
+
+    &__contactTitle {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    &__formGrid {
+      gap: 25px;
+    }
+
+    &__formLabel {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    &__formInput,
+    &__formSelect,
+    &__formTextarea {
+      font-size: 11px;
+      padding: 10px 12px;
+    }
+
+    &__formSubmit {
+      font-size: 12px;
+      padding: 12px 24px;
+    }
+  }
+}

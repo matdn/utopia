@@ -1,0 +1,14 @@
+{
+  "logo": {
+    "text": "TL",
+    "blendMode": "difference"
+  },
+  "images": [
+    "/images/loader-1.png",
+    "/images/loader-2.png",
+    "/images/loader-3.png",
+    "/images/loader-4.png",
+    "/images/loader-2.png"
+  ],
+  "animationDuration": 300
+}

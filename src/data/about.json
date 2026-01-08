@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "À propos",
+    "subtitle": "Photographe & Vidéaste"
+  },
+  "about": {
+    "title": "TL Photography",
+    "description": "Passionné par l'image et la capture d'instants uniques, je me spécialise dans la photographie et la vidéographie de voyage, de sport et d'événements. Mon objectif est de raconter des histoires visuelles authentiques qui capturent l'essence de chaque moment.",
+    "skills": [
+      "Photographie de voyage",
+      "Vidéographie événementielle",
+      "Reportage photo",
+      "Production de contenu",
+      "Retouche & post-production"
+    ]
+  },
+  "stats": [
+    {
+      "number": "500+",
+      "label": "Projets réalisés"
+    },
+    {
+      "number": "50+",
+      "label": "Clients satisfaits"
+    },
+    {
+      "number": "5+",
+      "label": "Années d'expérience"
+    }
+  ]
+}

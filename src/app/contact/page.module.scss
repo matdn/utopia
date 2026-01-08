@@ -1,0 +1,288 @@
+.contact {
+  min-height: 100vh;
+  padding-top: 80px;
+
+  &__hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/section-2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  &__title {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+  }
+
+  &__subtitle {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+  }
+
+  &__content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__infoBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__infoTitle {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__infoValue {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__social {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__label {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 16px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    outline: none;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.02);
+    }
+  }
+
+  &__select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23000' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 50px;
+  }
+
+  &__textarea {
+    resize: vertical;
+    min-height: 150px;
+    line-height: 1.6;
+  }
+
+  &__submit {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 18px 40px;
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    &__title {
+      font-size: 90px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+
+    &__content {
+      padding: 80px 40px;
+      gap: 60px;
+    }
+
+    &__infoValue {
+      font-size: 16px;
+    }
+
+    &__social {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 60px;
+
+    &__hero {
+      height: 40vh;
+    }
+
+    &__title {
+      font-size: 60px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+      padding: 60px 20px;
+      gap: 50px;
+    }
+
+    &__info {
+      gap: 35px;
+    }
+
+    &__infoTitle {
+      font-size: 13px;
+    }
+
+    &__infoValue {
+      font-size: 15px;
+    }
+
+    &__social {
+      font-size: 14px;
+    }
+
+    &__form {
+      gap: 25px;
+    }
+
+    &__label {
+      font-size: 12px;
+    }
+
+    &__input,
+    &__select,
+    &__textarea {
+      font-size: 14px;
+      padding: 14px 16px;
+    }
+
+    &__submit {
+      width: 100%;
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+    }
+
+    &__infoValue,
+    &__social {
+      font-size: 13px;
+    }
+
+    &__input,
+    &__select,
+    &__textarea {
+      font-size: 13px;
+      padding: 12px 14px;
+    }
+
+    &__submit {
+      font-size: 12px;
+      padding: 16px 32px;
+    }
+  }
+}

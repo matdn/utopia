@@ -1,0 +1,116 @@
+$loader-bg: #000;
+$loader-width: 400px;
+$loader-height: 600px;
+$logo-size: 120px;
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $loader-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  &--hiding {
+    transform: translateY(-100%);
+  }
+
+  &__container {
+    position: relative;
+    width: $loader-width;
+    height: $loader-height;
+    overflow: hidden;
+    background: #000;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    pointer-events: none;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: $logo-size;
+    font-weight: 900;
+    font-family: 'Unbounded', sans-serif;
+    color: #fff;
+    mix-blend-mode: difference;
+    z-index: 10000;
+    opacity: 0;
+    animation: fadeInLogo 0.8s ease-in forwards;
+    transition: opacity 0.8s ease-out;
+  }
+
+  &--hiding &__logo {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .loader {
+    &__container {
+      width: 320px;
+      height: 480px;
+    }
+
+    &__logo {
+      font-size: 90px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loader {
+    &__container {
+      width: 280px;
+      height: 420px;
+    }
+
+    &__logo {
+      font-size: 70px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .loader {
+    &__container {
+      width: 240px;
+      height: 360px;
+    }
+
+    &__logo {
+      font-size: 60px;
+    }
+  }
+}

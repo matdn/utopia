@@ -1,15 +1,13 @@
-import Loader from "@/components/Loader";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 
-export default function Home() {
+export default function PricingPage() {
   return (
     <>
-      <Loader />
       <Header />
-      <Hero />
+      <Pricing />
       <Footer />
       <CustomCursor />
     </>

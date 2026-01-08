@@ -1,0 +1,57 @@
+{
+  "packs": [
+    {
+      "id": "essentiel",
+      "name": "ESSENTIEL",
+      "startingPrice": "à partir de 500€",
+      "description": "Mise en valeur de votre définition touristique, entreprise, évènementiel.\n\nCe pack comprend :\n• L'intervention instagram en 1 à 2 jours\n• Un reportage vidéo ou vidéo + 18 photos.",
+      "cta": "demander un devis"
+    },
+    {
+      "id": "premium",
+      "name": "PREMIUM",
+      "startingPrice": "à partir de 500€",
+      "description": "Reportage photo et vidéo (58 visuels; 2 vidéos)\n\nCe pack comprend :\n• Une journée en totale expérience\n• Modélisation d'un pack 18 mois production réels\n• Partenariats + mise en avant\n• Je recommence",
+      "cta": "demander un devis"
+    },
+    {
+      "id": "boost-reel",
+      "name": "BOOST REEL",
+      "startingPrice": "à partir de 500€",
+      "description": "Création et (1,2 vidéo) pour booster votre compte instagram\n\nCe pack comprend :\n• Mise en valeur visuellement percutante et charge et de.",
+      "cta": "demander un devis"
+    }
+  ],
+  "contact": {
+    "title": "contact",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Prénom et Nom",
+        "placeholder": "jhon doe",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "label": "email",
+        "placeholder": "jhon doe",
+        "type": "email"
+      },
+      {
+        "name": "phone",
+        "label": "téléphone",
+        "placeholder": "jhon doe",
+        "type": "tel"
+      },
+      {
+        "name": "address",
+        "label": "adresse",
+        "placeholder": "jhon doe",
+        "type": "text"
+      }
+    ],
+    "offerLabel": "offre correspondante premium",
+    "projectLabel": "Décrivez nous votre projet",
+    "cta": "demander votre devis"
+  }
+}

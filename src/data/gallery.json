@@ -1,0 +1,64 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "src": "/images/gallery/image-1.jpg",
+      "title": "Photo 1",
+      "category": "Nature"
+    },
+    {
+      "id": 2,
+      "src": "/images/gallery/image-2.jpg",
+      "title": "Photo 2",
+      "category": "Urban"
+    },
+    {
+      "id": 3,
+      "src": "/images/gallery/image-3.jpg",
+      "title": "Photo 3",
+      "category": "Portrait"
+    },
+    {
+      "id": 4,
+      "src": "/images/gallery/image-4.jpg",
+      "title": "Photo 4",
+      "category": "Nature"
+    },
+    {
+      "id": 5,
+      "src": "/images/gallery/image-5.jpg",
+      "title": "Photo 5",
+      "category": "Urban"
+    },
+    {
+      "id": 6,
+      "src": "/images/gallery/image-6.jpg",
+      "title": "Photo 6",
+      "category": "Portrait"
+    },
+    {
+      "id": 7,
+      "src": "/images/gallery/image-7.jpg",
+      "title": "Photo 7",
+      "category": "Nature"
+    },
+    {
+      "id": 8,
+      "src": "/images/gallery/image-8.jpg",
+      "title": "Photo 8",
+      "category": "Urban"
+    },
+    {
+      "id": 9,
+      "src": "/images/gallery/image-9.jpg",
+      "title": "Photo 9",
+      "category": "Portrait"
+    },
+    {
+      "id": 10,
+      "src": "/images/gallery/image-10.jpg",
+      "title": "Photo 10",
+      "category": "Nature"
+    }
+  ]
+}

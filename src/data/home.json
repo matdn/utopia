@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "id": 1,
+      "title": "Création de contenu, partenariat",
+      "description": "Mise en avant sur nos réseaux sociaux créations de vidéos types.",
+      "backgroundImage": "/images/section-1.jpg",
+      "duration": 5000
+    },
+    {
+      "id": 2,
+      "title": "Réalisation de vidéo, reportage, réel",
+      "description": "Découvrez notre catalogue dédié aux réalisation de vidéos, reportages et reels.",
+      "backgroundImage": "/images/section-2.jpg",
+      "duration": 5000
+    },
+    {
+      "id": 3,
+      "title": "Réseaux sociaux",
+      "description": "Découvrez comment nous pouvons valoriser votre compte Instagram grâce à nos créations.",
+      "backgroundImage": "/images/section-3.jpg",
+      "duration": 5000
+    }
+  ],
+  "logo": "TL"
+}

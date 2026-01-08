@@ -1,0 +1,127 @@
+.footer {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 80px 60px 40px;
+
+  &__content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__logo {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__tagline {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__title {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  &__copyright {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 60px 40px 30px;
+
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    &__logo {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 20px 25px;
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    &__logo {
+      font-size: 36px;
+    }
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+
+    &__copyright {
+      font-size: 11px;
+    }
+  }
+}
