@@ -1,19 +1,33 @@
 .pricing {
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #e8e8e8 0%, #e8e8e8 50%, #0a1628 50%, #0a1628 100%);
+  // min-height: 100vh;
+  // background: linear-gradient(to bottom, #e8e8e8 0%, #e8e8e8 50%, #0a1628 50%, #0a1628 100%);
 
-  &__logo {
+  &__intro {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 0;
+    padding: 80px 60px 40px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
-  &__logoText {
+  &__introTitle {
     font-family: 'Unbounded', sans-serif;
-    font-size: 120px;
-    font-weight: 900;
+    font-size: 48px;
+    font-weight: 700;
     color: #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__introDescription {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.6;
   }
 
   &__packsWrapper {
@@ -84,25 +98,55 @@
 
   &__cardPrice {
     font-family: 'Unbounded', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
     display: inline-block;
-    padding: 6px 12px;
-    border: 1px solid #fff;
-    border-radius: 4px;
+  }
+
+  &__cardSubtitle {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-style: italic;
   }
 
   &__cardContent {
     flex: 1;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
-  &__cardDescription {
+  &__cardFeatures {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__cardFeature {
     font-family: 'Unbounded', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 1.6;
-    white-space: pre-line;
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+
+    &:before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+  }
+
+  &__cardNote {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 20px;
   }
 
   &__cardCta {

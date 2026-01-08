@@ -7,8 +7,11 @@ import pricingData from '@/data/pricing.json';
 interface Pack {
   id: string;
   name: string;
+  price: string;
   startingPrice: string;
-  description: string;
+  subtitle: string;
+  features: string[];
+  note: string;
   cta: string;
 }
 
@@ -27,20 +30,27 @@ interface Contact {
   cta: string;
 }
 
+interface Intro {
+  title: string;
+  description: string;
+}
+
 interface PricingData {
+  intro: Intro;
   packs: Pack[];
   contact: Contact;
 }
 
 export default function Pricing() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const { packs, contact } = pricingData as PricingData;
+  const { intro, packs, contact } = pricingData as PricingData;
 
   return (
     <div className={styles.pricing}>
-      {/* Logo Section */}
-      <div className={styles.pricing__logo}>
-        <div className={styles.pricing__logoText}>TL</div>
+      {/* Intro Section */}
+      <div className={styles.pricing__intro}>
+        <h1 className={styles.pricing__introTitle}>{intro.title}</h1>
+        <p className={styles.pricing__introDescription}>{intro.description}</p>
       </div>
 
       {/* Packs Section with Horizontal Scroll */}
@@ -50,18 +60,17 @@ export default function Pricing() {
             <div key={pack.id} className={styles.pricing__card}>
               <div className={styles.pricing__cardHeader}>
                 <h2 className={styles.pricing__cardTitle}>{pack.name}</h2>
-                <span className={styles.pricing__cardPrice}>{pack.startingPrice}</span>
+                <span className={styles.pricing__cardPrice}>{pack.price}</span>
               </div>
+              <p className={styles.pricing__cardSubtitle}>{pack.subtitle}</p>
               <div className={styles.pricing__cardContent}>
-                <p className={styles.pricing__cardDescription}>
-                  {pack.description.split('\n').map((line: string, index: number) => (
-                    <span key={index}>
-                      {line}
-                      {index < pack.description.split('\n').length - 1 && <br />}
-                    </span>
+                <ul className={styles.pricing__cardFeatures}>
+                  {pack.features.map((feature: string, index: number) => (
+                    <li key={index} className={styles.pricing__cardFeature}>{feature}</li>
                   ))}
-                </p>
+                </ul>
               </div>
+              {pack.note && <p className={styles.pricing__cardNote}>{pack.note}</p>}
               <button className={styles.pricing__cardCta}>{pack.cta}</button>
             </div>
           ))}

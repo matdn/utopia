@@ -1,27 +1,148 @@
 {
+  "intro": {
+    "title": "Tarifs",
+    "description": "Nos prestations débutent à partir de 500 € (hors frais de déplacement). Le tarif final dépend des besoins et objectifs définis avec le client."
+  },
   "packs": [
     {
       "id": "essentiel",
       "name": "ESSENTIEL",
+      "price": "500€",
       "startingPrice": "à partir de 500€",
-      "description": "Mise en valeur de votre définition touristique, entreprise, évènementiel.\n\nCe pack comprend :\n• L'intervention instagram en 1 à 2 jours\n• Un reportage vidéo ou vidéo + 18 photos.",
+      "subtitle": "Idéal pour une visibilité rapide et efficace",
+      "features": [
+        "1 vidéo courte de mise en avant (≈ 30 secondes)",
+        "1 post carrousel (photos & vidéos)",
+        "Retouche photo & montage vidéo inclus",
+        "Ajout de texte à l'écran et sous-titres si voix off",
+        "Livraison du contenu sous 72h",
+        "Optimisation pour les réseaux sociaux",
+        "Diffusion : Instagram, Facebook, TikTok, YouTube Shorts",
+        "Cession des droits d'utilisation"
+      ],
+      "note": "hors frais de déplacement",
       "cta": "demander un devis"
     },
     {
       "id": "premium",
       "name": "PREMIUM",
-      "startingPrice": "à partir de 500€",
-      "description": "Reportage photo et vidéo (58 visuels; 2 vidéos)\n\nCe pack comprend :\n• Une journée en totale expérience\n• Modélisation d'un pack 18 mois production réels\n• Partenariats + mise en avant\n• Je recommence",
+      "price": "650€",
+      "startingPrice": "à partir de 650€",
+      "subtitle": "Le meilleur équilibre entre contenu et visibilité",
+      "features": [
+        "2 vidéos courtes optimisées réseaux sociaux",
+        "1 post photo carrousel",
+        "Retouches photo & montage vidéo",
+        "Vidéos en haute résolution (jusqu'à 8K)",
+        "Livraison sous 48h",
+        "Diffusion : Instagram, Facebook, TikTok, YouTube Shorts",
+        "Cession des droits d'utilisation"
+      ],
+      "note": "hors frais de déplacement",
       "cta": "demander un devis"
     },
     {
-      "id": "boost-reel",
-      "name": "BOOST REEL",
-      "startingPrice": "à partir de 500€",
-      "description": "Création et (1,2 vidéo) pour booster votre compte instagram\n\nCe pack comprend :\n• Mise en valeur visuellement percutante et charge et de.",
+      "id": "signature",
+      "name": "SIGNATURE",
+      "price": "Sur devis",
+      "startingPrice": "sur devis",
+      "subtitle": "Une présence forte et premium sur les réseaux sociaux",
+      "features": [
+        "Création de contenus photo & vidéo sur mesure",
+        "Gestion des réseaux sociaux (Reels, Carrousels, Stories)",
+        "Templates 'New Post' et 'New Reel'",
+        "Fréquence de publication au choix du client",
+        "Ligne éditoriale et identité visuelle cohérentes",
+        "Vidéos dynamiques (Speed Ramp, storytelling)",
+        "Suivi et ajustements selon les performances",
+        "Cession des droits d'utilisation"
+      ],
+      "note": "Idéal pour restaurants, hôtels, manoirs, lieux d'exception",
       "cta": "demander un devis"
     }
   ],
+  "services": [
+    {
+      "id": "service-1",
+      "title": "Création de contenu photo & vidéo",
+      "features": [
+        "Prise de vue professionnelle sur site",
+        "Photos et vidéos retouchées et montées",
+        "Livraison sous 48h",
+        "Vidéos en haute résolution (jusqu'à 8K)",
+        "Cession des droits d'utilisation"
+      ]
+    },
+    {
+      "id": "service-2",
+      "title": "Mise en avant de votre entreprise",
+      "features": [
+        "Publication du contenu sur nos propres réseaux sociaux",
+        "Augmentation de la visibilité et de la notoriété",
+        "Formats : Reels, Vidéos, Carrousels photos"
+      ]
+    },
+    {
+      "id": "service-3",
+      "title": "Gestion des réseaux sociaux",
+      "features": [
+        "Gestion complète ou partielle de vos comptes",
+        "Création et publication de Reels, Carrousels, Stories",
+        "Templates 'New Post' et 'New Reel'",
+        "Fréquence au choix du client (hebdomadaire)",
+        "Ligne éditoriale cohérente"
+      ]
+    },
+    {
+      "id": "service-4",
+      "title": "Vidéos Speed Ramp",
+      "features": [
+        "Création de vidéos dynamiques Speed Ramp",
+        "Mise en valeur du savoir-faire et des produits",
+        "Format idéal pour capter l'attention"
+      ]
+    }
+  ],
+  "options": {
+    "video": [
+      {
+        "name": "Vidéo courte supplémentaire",
+        "price": "+200€"
+      },
+      {
+        "name": "Vidéo avec voix off professionnelle",
+        "price": "+150€"
+      },
+      {
+        "name": "Vidéo Speed Ramp",
+        "price": "+300€"
+      }
+    ],
+    "photo": [
+      {
+        "name": "Carrousel photo supplémentaire",
+        "price": "+100€"
+      },
+      {
+        "name": "Galerie photos complète (20–30 photos retouchées)",
+        "price": "+150€"
+      }
+    ],
+    "social": [
+      {
+        "name": "Stories supplémentaires (x5)",
+        "price": "+60€"
+      },
+      {
+        "name": "Gestion mensuelle des réseaux sociaux",
+        "price": "sur devis"
+      }
+    ]
+  },
+  "notes": {
+    "travel": "Les frais de déplacement sont facturés en supplément, selon la distance du lieu de prestation.",
+    "additional": "Toute prestation supplémentaire fera l'objet d'un devis complémentaire."
+  },
   "contact": {
     "title": "contact",
     "fields": [
@@ -34,23 +155,23 @@
       {
         "name": "email",
         "label": "email",
-        "placeholder": "jhon doe",
+        "placeholder": "votre@email.com",
         "type": "email"
       },
       {
         "name": "phone",
         "label": "téléphone",
-        "placeholder": "jhon doe",
+        "placeholder": "+33 6 12 34 56 78",
         "type": "tel"
       },
       {
-        "name": "address",
-        "label": "adresse",
-        "placeholder": "jhon doe",
+        "name": "company",
+        "label": "entreprise",
+        "placeholder": "nom de votre entreprise",
         "type": "text"
       }
     ],
-    "offerLabel": "offre correspondante premium",
+    "offerLabel": "pack choisi",
     "projectLabel": "Décrivez nous votre projet",
     "cta": "demander votre devis"
   }
