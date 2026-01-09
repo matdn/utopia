@@ -17,10 +17,10 @@
       "Carte détaillée des spots photo"
     ],
     "images": {
-      "cover": "/images/shop/guide-breton-cover.jpg",
-      "spread1": "/images/shop/guide-breton-spread1.jpg",
-      "spread2": "/images/shop/guide-breton-spread2.jpg",
-      "detail": "/images/shop/guide-breton-detail.jpg"
+      "cover": "/images/book/books.png",
+      "spread1": "/images/book/books.png",
+      "spread2": "/images/book/books.png",
+      "detail": "/images/book/books.png"
     },
     "available": true
   }
