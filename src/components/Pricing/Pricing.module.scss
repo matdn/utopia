@@ -33,12 +33,13 @@
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 40px 0 80px;
+    padding: 40px 0 100px;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    background: #f8f8f8;
 
     &::-webkit-scrollbar {
-      height: 8px;
+      height: 6px;
     }
 
     &::-webkit-scrollbar-track {
@@ -46,69 +47,92 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
 
       &:hover {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.4);
       }
     }
   }
 
   &__packs {
     display: flex;
-    gap: 30px;
+    gap: 1px;
     padding: 0 60px;
     min-width: min-content;
+    background: rgba(0, 0, 0, 0.1);
   }
 
   &__card {
-    min-width: 550px;
-    max-width: 550px;
-    background: #6078a2;
-    border-radius: 0;
-    padding: 40px 30px;
+    min-width: 450px;
+    max-width: 450px;
+    background: #fff;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #fff;
+    color: #000;
     flex-shrink: 0;
+    transition: all 0.4s ease;
 
-    &:nth-child(2) {
-      background: #324f88;
-    }
+    &:hover {
+      background: #000;
+      color: #fff;
+      transform: translateY(-10px);
 
-    &:nth-child(3) {
-      background: #1a2332;
+      .pricing__cardTitle,
+      .pricing__cardPrice,
+      .pricing__cardSubtitle,
+      .pricing__cardFeature,
+      .pricing__cardNote {
+        color: #fff;
+      }
+
+      .pricing__cardCta {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
     }
   }
 
   &__cardHeader {
     margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   &__cardTitle {
     font-family: 'Unbounded', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.4s ease;
   }
 
   &__cardPrice {
     font-family: 'Unbounded', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    display: inline-block;
+    font-size: 32px;
+    font-weight: 300;
+    display: block;
+    transition: color 0.4s ease;
   }
 
   &__cardSubtitle {
     font-family: 'Unbounded', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.4;
-    margin-bottom: 20px;
-    font-style: italic;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.7;
+    transition: color 0.4s ease;
   }
 
   &__cardContent {
@@ -124,61 +148,63 @@
 
   &__cardFeature {
     font-family: 'Unbounded', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
-    line-height: 1.6;
-    padding: 8px 0;
+    line-height: 1.8;
+    padding: 10px 0;
     padding-left: 20px;
     position: relative;
+    transition: color 0.4s ease;
 
     &:before {
-      content: '•';
+      content: '—';
       position: absolute;
       left: 0;
-      font-weight: 700;
+      font-weight: 300;
     }
   }
 
   &__cardNote {
     font-family: 'Unbounded', sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 300;
-    font-style: italic;
-    opacity: 0.8;
-    margin-bottom: 20px;
+    opacity: 0.6;
+    margin-bottom: 30px;
+    transition: color 0.4s ease;
   }
 
   &__cardCta {
     font-family: 'Unbounded', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: lowercase;
-    padding: 12px 24px;
-    border: 1px solid #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 14px 28px;
+    border: 1px solid #000;
     background: transparent;
-    color: #fff;
+    color: #000;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     align-self: flex-start;
 
     &:hover {
-      background: #fff;
-      color: #000;
+      background: #000;
+      color: #fff;
     }
   }
 
   &__contact {
-    background: #0a1628;
-    padding: 80px 60px 100px;
+    background: #000;
+    padding: 100px 60px 120px;
   }
 
   &__contactTitle {
     font-family: 'Unbounded', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 64px;
+    font-weight: 300;
     color: #fff;
-    margin-bottom: 60px;
-    text-transform: lowercase;
+    margin-bottom: 80px;
+    line-height: 1.1;
   }
 
   &__form {
@@ -203,31 +229,29 @@
   }
 
   &__formLabel {
-    font-family: 'Unbounded', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #fff;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 12px;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   &__formInput,
   &__formSelect,
   &__formTextarea {
     font-family: 'Unbounded', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
-    padding: 12px 16px;
+    padding: 14px 0;
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
     outline: none;
     transition: border-color 0.3s ease;
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.3);
-      text-transform: lowercase;
     }
 
     &:focus {
@@ -245,30 +269,33 @@
     appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23fff' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right 16px center;
-    padding-right: 40px;
+    background-position: right 0 center;
+    padding-right: 30px;
 
     option {
-      background: #0a1628;
+      background: #000;
       color: #fff;
     }
   }
 
   &__formSubmit {
     font-family: 'Unbounded', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: lowercase;
-    padding: 14px 32px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
     border: 1px solid #fff;
     background: transparent;
     color: #fff;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     margin-top: 40px;
     float: right;
 
     &:hover {
+      background: #fff;
+      color: #000;
       background: #fff;
       color: #0a1628;
     }
