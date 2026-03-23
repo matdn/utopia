@@ -94,6 +94,23 @@ $header-color: rgba(0, 0, 0, 0.6);
   }
 }
 
+.header--light {
+  .header__logo a {
+    color: #fff;
+  }
+
+  .header__burger span {
+    background: #fff;
+    mix-blend-mode: normal;
+  }
+
+  .header__link {
+    color: #fff;
+    mix-blend-mode: normal;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+}
+
 @media (max-width: 1024px) {
   .header {
     padding: 0 40px;

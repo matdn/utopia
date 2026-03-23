@@ -68,7 +68,7 @@ export default function Shop() {
 
   return (
     <>
-      <Header/>
+      <Header variant="light" />
       <div className={styles.shop}>
         {/* Hero Section with Parallax & 3D */}
         <section className={styles.shop__hero}>
@@ -197,15 +197,29 @@ export default function Shop() {
             </div>
             
             <div className={styles.shop__ctaActions}>
-              <button 
-                className={styles.shop__ctaButton}
-                disabled={!book.available}
-              >
-                <span className={styles.shop__ctaButtonText}>
-                  {book.available ? 'Commander maintenant' : 'Bientôt disponible'}
-                </span>
-                <span className={styles.shop__ctaButtonCircle}>→</span>
-              </button>
+              {book.available ? (
+                <a
+                  className={styles.shop__ctaButton}
+                  href="https://www.amazon.fr/dp/B0DTYF2TC8?ref=cm_sw_r_ffobk_cso_cp_apin_dp_JVWPWWSKK6Z60BFY1QPS&ref_=cm_sw_r_ffobk_cso_cp_apin_dp_JVWPWWSKK6Z60BFY1QPS&social_share=cm_sw_r_ffobk_cso_cp_apin_dp_JVWPWWSKK6Z60BFY1QPS&bestFormat=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className={styles.shop__ctaButtonText}>
+                    Commander maintenant
+                  </span>
+                  <span className={styles.shop__ctaButtonCircle}>→</span>
+                </a>
+              ) : (
+                <button
+                  className={styles.shop__ctaButton}
+                  disabled
+                >
+                  <span className={styles.shop__ctaButtonText}>
+                    Bientôt disponible
+                  </span>
+                  <span className={styles.shop__ctaButtonCircle}>→</span>
+                </button>
+              )}
               <p className={styles.shop__ctaInfo}>
                 Livraison gratuite • Édition limitée • Stock limité
               </p>

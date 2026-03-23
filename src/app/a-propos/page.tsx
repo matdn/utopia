@@ -25,7 +25,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <Header />
+      <Header variant="light" />
       <main className={styles.about}>
         <section className={styles.about__hero}>
           <h1 className={styles.about__heroTitle}>{data.hero.title}</h1>

@@ -21,7 +21,7 @@ export default function Loader() {
       setTimeout(() => {
         setIsHidden(true);
       }, 800);
-    }, 5000);
+    }, 1500);
 
     return () => {
       clearInterval(interval);

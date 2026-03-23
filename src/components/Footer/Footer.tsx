@@ -44,11 +44,11 @@ export default function Footer() {
         <div className={styles.footer__section}>
           <h4 className={styles.footer__title}>Contact</h4>
           <div className={styles.footer__contact}>
-            <a href="mailto:contact@tl-photo.com" className={styles.footer__link}>
-              contact@tl-photo.com
+            <a href="mailto:utopiaphotographies@gmail.com" className={styles.footer__link}>
+              utopiaphotographies@gmail.com
             </a>
-            <a href="tel:+33612345678" className={styles.footer__link}>
-              +33 6 12 34 56 78
+            <a href="tel:+33675146508" className={styles.footer__link}>
+              06.75.14.65.08
             </a>
           </div>
         </div>

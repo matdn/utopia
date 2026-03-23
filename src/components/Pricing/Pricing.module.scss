@@ -16,7 +16,7 @@
     font-family: 'Unbounded', sans-serif;
     font-size: 64px;
     font-weight: 300;
-    color: #000;
+    color: #0d2134;
     margin-bottom: 30px;
     line-height: 1.1;
   }
@@ -25,8 +25,37 @@
     font-family: 'Unbounded', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(13, 33, 52, 0.6);
     line-height: 1.8;
+  }
+
+  &__imageSection {
+    width: 100%;
+    padding: 0 60px 80px;
+  }
+
+  &__imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    filter: grayscale(1);
+    animation: fadeInScale 1.2s ease-out;
+
+    img {
+      transition: transform 0.6s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  &__imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 60%, rgba(255, 255, 255, 0.8));
+    pointer-events: none;
   }
 
   &__packsWrapper {
@@ -36,7 +65,7 @@
     padding: 40px 0 100px;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    background: #f8f8f8;
+    // background: #f8f8f8;
 
     &::-webkit-scrollbar {
       height: 6px;
@@ -61,23 +90,35 @@
     gap: 1px;
     padding: 0 60px;
     min-width: min-content;
-    background: rgba(0, 0, 0, 0.1);
+    // background: rgba(0, 0, 0, 0.1);
   }
 
   &__card {
     min-width: 450px;
     max-width: 450px;
-    background: #fff;
+    background: #6281b6;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #000;
+    color: #fff;
     flex-shrink: 0;
     transition: all 0.4s ease;
 
+    &:nth-child(2) {
+      background: #354b76;
+    }
+
+    &:nth-child(3) {
+      background: #152a55;
+    }
+
+    &:nth-child(4) {
+      background: #1b365f;
+    }
+
     &:hover {
-      background: #000;
+      background: #0d2134;
       color: #fff;
       transform: translateY(-10px);
 
@@ -95,7 +136,7 @@
 
         &:hover {
           background: #fff;
-          color: #000;
+          color: #0d2134;
         }
       }
     }
@@ -104,7 +145,7 @@
   &__cardHeader {
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   &__cardTitle {
@@ -180,21 +221,21 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 14px 28px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     background: transparent;
-    color: #000;
+    color: #fff;
     cursor: pointer;
     transition: all 0.4s ease;
     align-self: flex-start;
 
     &:hover {
-      background: #000;
-      color: #fff;
+      background: #fff;
+      color: #0d2134;
     }
   }
 
   &__contact {
-    background: #000;
+    background: #0d2134;
     padding: 100px 60px 120px;
   }
 
@@ -273,7 +314,7 @@
     padding-right: 30px;
 
     option {
-      background: #000;
+      background: #0d2134;
       color: #fff;
     }
   }
@@ -295,9 +336,7 @@
 
     &:hover {
       background: #fff;
-      color: #000;
-      background: #fff;
-      color: #0a1628;
+      color: #0d2134;
     }
   }
 }
@@ -489,5 +528,16 @@
       font-size: 12px;
       padding: 12px 24px;
     }
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

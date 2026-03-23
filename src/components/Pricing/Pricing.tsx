@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 import styles from './Pricing.module.scss';
 import pricingData from '@/data/pricing.json';
+import Image from 'next/image';
 
 interface Pack {
   id: string;
@@ -53,6 +54,19 @@ export default function Pricing() {
         <p className={styles.pricing__introDescription}>{intro.description}</p>
       </div>
 
+      {/* Image Section with Animation */}
+      <div className={styles.pricing__imageSection}>
+        <div className={styles.pricing__imageWrapper}>
+          <Image
+            src="/images/section-2.jpg"
+            alt="Photographie"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
+          <div className={styles.pricing__imageOverlay} />
+        </div>
+      </div>
+
       {/* Packs Section with Horizontal Scroll */}
       <div className={styles.pricing__packsWrapper}>
         <div className={styles.pricing__packs} ref={scrollContainerRef}>
@@ -80,13 +94,19 @@ export default function Pricing() {
       {/* Contact Section */}
       <div className={styles.pricing__contact}>
         <h2 className={styles.pricing__contactTitle}>{contact.title}</h2>
-        <form className={styles.pricing__form}>
+        <form
+          className={styles.pricing__form}
+          action="mailto:utopiaphotographies@gmail.com"
+          method="post"
+          encType="text/plain"
+        >
           <div className={styles.pricing__formGrid}>
             {contact.fields.map((field: Field) => (
               <div key={field.name} className={styles.pricing__formGroup}>
                 <label className={styles.pricing__formLabel}>{field.label}</label>
                 <input
                   type={field.type}
+                  name={field.name}
                   placeholder={field.placeholder}
                   className={styles.pricing__formInput}
                 />
@@ -97,7 +117,7 @@ export default function Pricing() {
           <div className={styles.pricing__formRow}>
             <div className={styles.pricing__formGroup}>
               <label className={styles.pricing__formLabel}>{contact.offerLabel}</label>
-              <select className={styles.pricing__formSelect}>
+              <select className={styles.pricing__formSelect} name="offer">
                 <option value="">Sélectionner une offre</option>
                 {packs.map((pack: Pack) => (
                   <option key={pack.id} value={pack.id}>
@@ -112,6 +132,7 @@ export default function Pricing() {
             <label className={styles.pricing__formLabel}>{contact.projectLabel}</label>
             <textarea
               className={styles.pricing__formTextarea}
+              name="project"
               rows={6}
             />
           </div>

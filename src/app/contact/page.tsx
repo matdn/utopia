@@ -30,7 +30,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <Header />
+      <Header variant="light" />
       <main className={styles.contact}>
         <section className={styles.contact__hero}>
           <h1 className={styles.contact__title}>Contact</h1>
@@ -41,15 +41,15 @@ export default function ContactPage() {
           <div className={styles.contact__info}>
             <div className={styles.contact__infoBlock}>
               <h3 className={styles.contact__infoTitle}>Email</h3>
-              <a href="mailto:contact@tl-photo.com" className={styles.contact__infoValue}>
-                contact@tl-photo.com
+              <a href="mailto:utopiaphotographies@gmail.com" className={styles.contact__infoValue}>
+                utopiaphotographies@gmail.com
               </a>
             </div>
 
             <div className={styles.contact__infoBlock}>
               <h3 className={styles.contact__infoTitle}>Téléphone</h3>
-              <a href="tel:+33612345678" className={styles.contact__infoValue}>
-                +33 6 12 34 56 78
+              <a href="tel:+33675146508" className={styles.contact__infoValue}>
+                06.75.14.65.08
               </a>
             </div>
 

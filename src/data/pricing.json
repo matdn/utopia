@@ -26,8 +26,8 @@
     {
       "id": "premium",
       "name": "PREMIUM",
-      "price": "650€",
-      "startingPrice": "à partir de 650€",
+      "price": "750€",
+      "startingPrice": "à partir de 750€",
       "subtitle": "Le meilleur équilibre entre contenu et visibilité",
       "features": [
         "2 vidéos courtes optimisées réseaux sociaux",
@@ -39,6 +39,23 @@
         "Cession des droits d'utilisation"
       ],
       "note": "hors frais de déplacement",
+      "cta": "demander un devis"
+    },
+    {
+      "id": "reseaux-sociaux",
+      "name": "RÉSEAUX SOCIAUX",
+      "price": "à partir de 750€ / mois",
+      "startingPrice": "à partir de 750€ / mois",
+      "subtitle": "Gestion de vos réseaux sociaux avec un rythme régulier",
+      "features": [
+        "3 posts / semaine : 750€ / mois",
+        "4 posts / semaine : 950€ / mois",
+        "5 posts / semaine : 1150€ / mois",
+        "Planification éditoriale et calendrier",
+        "Création des visuels et rédaction",
+        "Suivi des performances"
+      ],
+      "note": "engagement mensuel",
       "cta": "demander un devis"
     },
     {
