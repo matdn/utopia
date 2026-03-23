@@ -56,7 +56,7 @@ export default function ContactPage() {
             <div className={styles.contact__infoBlock}>
               <h3 className={styles.contact__infoTitle}>Réseaux sociaux</h3>
               <div className={styles.contact__socials}>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.contact__social}>
+                <a href="https://www.instagram.com/tanguy_lut_photo/" target="_blank" rel="noopener noreferrer" className={styles.contact__social}>
                   Instagram
                 </a>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={styles.contact__social}>
