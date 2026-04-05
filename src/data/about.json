@@ -6,12 +6,32 @@
   "about": {
     "title": "TL Photography",
     "description": "Passionné par l'image et la capture d'instants uniques, je me spécialise dans la photographie et la vidéographie de voyage, de sport et d'événements. Mon objectif est de raconter des histoires visuelles authentiques qui capturent l'essence de chaque moment.",
-    "skills": [
-      "Photographie de voyage",
-      "Vidéographie événementielle",
-      "Reportage photo",
-      "Production de contenu",
-      "Retouche & post-production"
+    "services": [
+      {
+        "id": "photographie-voyage",
+        "title": "Photographie de voyage",
+        "description": "Des clichés authentiques qui capturent l'âme des lieux et des cultures traversés. De l'Asie aux Amériques, chaque voyage devient une histoire visuelle unique racontée à travers des images soigneusement composées et lumineuses."
+      },
+      {
+        "id": "videographie-evenementielle",
+        "title": "Vidéographie événementielle",
+        "description": "Mariages, conférences, concerts, lancements de produit — chaque événement mérite d'être immortalisé avec soin. Nous capturons les émotions et les instants clés avec discrétion, précision et un sens aigu du rythme narratif."
+      },
+      {
+        "id": "reportage-photo",
+        "title": "Reportage photo",
+        "description": "Un regard documentaire et humain sur vos projets, vos équipes et vos territoires. Des séries narratives cohérentes qui donnent du sens et de la profondeur à votre communication visuelle."
+      },
+      {
+        "id": "production-contenu",
+        "title": "Production de contenu",
+        "description": "Photos, vidéos, reels et stories pensés pour les réseaux sociaux et la communication digitale. Un contenu stratégique, esthétique et impactant pour développer votre présence en ligne et fédérer votre communauté."
+      },
+      {
+        "id": "retouche-post-production",
+        "title": "Retouche & post-production",
+        "description": "De la colorimétrie au montage, chaque image est travaillée avec soin pour atteindre un rendu professionnel et cohérent. Étalonnage, retouche avancée et direction artistique au service de votre identité visuelle."
+      }
     ]
   },
   "stats": [

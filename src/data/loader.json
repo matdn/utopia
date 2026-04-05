@@ -1,14 +1,12 @@
 {
   "logo": {
-    "text": "TL",
+    "text": "UTOPIA",
     "blendMode": "difference"
   },
   "images": [
     "/images/loader-1.png",
     "/images/loader-2.png",
-    "/images/loader-3.png",
-    "/images/loader-4.png",
-    "/images/loader-5.png"
+    "/images/loader-3.png"
   ],
-  "animationDuration": 500
+  "animationDuration": 250
 }

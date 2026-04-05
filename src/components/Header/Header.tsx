@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from './Header.module.scss';
 
 interface HeaderProps {
@@ -10,9 +11,8 @@ interface HeaderProps {
 
 export default function Header({ variant = 'dark' }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const headerClassName = variant === 'light'
-    ? `${styles.header} ${styles['header--light']}`
-    : styles.header;
+  const pathname = usePathname();
+  const useLightHeader = pathname === '/shop' || pathname === '/a-propos' || pathname === '/contact';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,9 +23,9 @@ export default function Header({ variant = 'dark' }: HeaderProps) {
   };
 
   return (
-    <header className={headerClassName}>
+    <header className={`${styles.header} ${useLightHeader ? styles['header--light'] : ''}`}>
       <div className={styles.header__logo}>
-        <Link href="/" onClick={closeMenu}>TL</Link>
+        <Link href="/" onClick={closeMenu}>UTOPIA</Link>
       </div>
 
       <button 

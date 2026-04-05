@@ -48,7 +48,7 @@ export default function Gallery3D() {
       </Canvas>
       
       <div className={styles.gallery3D__overlay}>
-        <h1 className={styles.gallery3D__title}>TL</h1>
+        <h1 className={styles.gallery3D__title}>UTOPIA</h1>
         <p className={styles.gallery3D__instruction}>
           Scrollez pour accélérer
         </p>

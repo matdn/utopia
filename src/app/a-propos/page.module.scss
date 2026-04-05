@@ -1,5 +1,6 @@
 .about {
   min-height: 100vh;
+  background: #fff;
 
   &__hero {
     height: 60vh;
@@ -64,39 +65,39 @@
     max-width: 800px;
   }
 
-  &__skills {
+  &__services {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
-  &__skillsTitle {
+  &__service {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 100px;
+
+    &:first-child {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__serviceTitle {
     font-family: 'Unbounded', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: #000;
-    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
   }
 
-  &__skillsList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    list-style: none;
-  }
-
-  &__skill {
+  &__serviceDescription {
     font-family: 'Unbounded', sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
+    line-height: 1.9;
     color: rgba(0, 0, 0, 0.7);
-    padding: 16px 24px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      border-color: rgba(0, 0, 0, 0.3);
-      background: rgba(0, 0, 0, 0.02);
-    }
+    max-width: 700px;
   }
 
   &__stats {
@@ -190,15 +191,11 @@
       font-size: 15px;
     }
 
-    &__skillsTitle {
-      font-size: 20px;
+    &__serviceTitle {
+      font-size: 18px;
     }
 
-    &__skillsList {
-      grid-template-columns: 1fr;
-    }
-
-    &__skill {
+    &__serviceDescription {
       font-size: 13px;
     }
 

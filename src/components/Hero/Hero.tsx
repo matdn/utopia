@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Hero.module.scss';
 import homeData from '@/data/home.json';
 
@@ -64,8 +65,9 @@ export default function Hero() {
       {/* Sections at the bottom */}
       <div className={styles.hero__sections}>
         {sections.map((section, index) => (
-          <div
+          <Link
             key={section.id}
+            href={section.link}
             className={`${styles.section} ${
               index === activeIndex ? styles['section--active'] : ''
             }`}
@@ -89,7 +91,7 @@ export default function Hero() {
                 }}
               />
             )}
-          </div>
+          </Link>
         ))}
       </div>
     </section>

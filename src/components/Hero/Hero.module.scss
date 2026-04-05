@@ -51,6 +51,8 @@ $section-height: 150px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  text-decoration: none;
+  display: block;
 
   &:last-child {
     border-right: none;

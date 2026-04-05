@@ -12,7 +12,11 @@ interface AboutData {
   about: {
     title: string;
     description: string;
-    skills: string[];
+    services: Array<{
+      id: string;
+      title: string;
+      description: string;
+    }>;
   };
   stats: Array<{
     number: string;
@@ -37,13 +41,13 @@ export default function AboutPage() {
             <h2 className={styles.about__title}>{data.about.title}</h2>
             <p className={styles.about__description}>{data.about.description}</p>
             
-            <div className={styles.about__skills}>
-              <h3 className={styles.about__skillsTitle}>Compétences</h3>
-              <ul className={styles.about__skillsList}>
-                {data.about.skills.map((skill: string, index: number) => (
-                  <li key={index} className={styles.about__skill}>{skill}</li>
-                ))}
-              </ul>
+            <div className={styles.about__services}>
+              {data.about.services.map((service) => (
+                <div key={service.id} id={service.id} className={styles.about__service}>
+                  <h3 className={styles.about__serviceTitle}>{service.title}</h3>
+                  <p className={styles.about__serviceDescription}>{service.description}</p>
+                </div>
+              ))}
             </div>
           </div>
 

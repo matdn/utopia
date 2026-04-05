@@ -2,63 +2,57 @@
   "images": [
     {
       "id": 1,
-      "src": "/images/gallery/image-1.jpg",
-      "title": "Photo 1",
-      "category": "Nature"
+      "src": "/images/loader-1.png",
+      "title": "Session océan",
+      "category": "Sport",
+      "location": "Côte Atlantique",
+      "date": "Mars 2026",
+      "description": "Session au lever du jour pour capter l'énergie des vagues et la lumière naturelle."
     },
     {
       "id": 2,
-      "src": "/images/gallery/image-2.jpg",
-      "title": "Photo 2",
-      "category": "Urban"
+      "src": "/images/loader-2.png",
+      "title": "Ligne d'horizon",
+      "category": "Paysage",
+      "location": "Bretagne",
+      "date": "Mars 2026",
+      "description": "Composition minimaliste mettant en valeur la profondeur et les contrastes du littoral."
     },
     {
       "id": 3,
-      "src": "/images/gallery/image-3.jpg",
-      "title": "Photo 3",
-      "category": "Portrait"
+      "src": "/images/loader-3.png",
+      "title": "Vitesse & mouvement",
+      "category": "Action",
+      "location": "Finistère",
+      "date": "Mars 2026",
+      "description": "Capture d'un moment d'action avec un travail précis sur le timing et la dynamique."
     },
     {
       "id": 4,
-      "src": "/images/gallery/image-4.jpg",
-      "title": "Photo 4",
-      "category": "Nature"
+      "src": "/images/section-1.jpg",
+      "title": "Relief & lumière",
+      "category": "Nature",
+      "location": "Arrière-pays",
+      "date": "Février 2026",
+      "description": "Ambiance texturée et lumière rasante pour une image cinématique."
     },
     {
       "id": 5,
-      "src": "/images/gallery/image-5.jpg",
-      "title": "Photo 5",
-      "category": "Urban"
+      "src": "/images/section-2.jpg",
+      "title": "Ambiance urbaine",
+      "category": "Urbain",
+      "location": "Centre-ville",
+      "date": "Janvier 2026",
+      "description": "Série orientée branding pour réseaux sociaux avec un rendu propre et contrasté."
     },
     {
       "id": 6,
-      "src": "/images/gallery/image-6.jpg",
-      "title": "Photo 6",
-      "category": "Portrait"
-    },
-    {
-      "id": 7,
-      "src": "/images/gallery/image-7.jpg",
-      "title": "Photo 7",
-      "category": "Nature"
-    },
-    {
-      "id": 8,
-      "src": "/images/gallery/image-8.jpg",
-      "title": "Photo 8",
-      "category": "Urban"
-    },
-    {
-      "id": 9,
-      "src": "/images/gallery/image-9.jpg",
-      "title": "Photo 9",
-      "category": "Portrait"
-    },
-    {
-      "id": 10,
-      "src": "/images/gallery/image-10.jpg",
-      "title": "Photo 10",
-      "category": "Nature"
+      "src": "/images/section-3.jpg",
+      "title": "Sentier côtier",
+      "category": "Reportage",
+      "location": "Bord de mer",
+      "date": "Janvier 2026",
+      "description": "Scène immersive pensée pour raconter un territoire et son identité visuelle."
     }
   ]
 }
