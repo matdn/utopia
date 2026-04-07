@@ -2,7 +2,7 @@
   "images": [
     {
       "id": 1,
-      "src": "/images/loader-1.png",
+      "src": "/images/DSC_0503-Enhanced-NR%20copie.JPG",
       "title": "Session océan",
       "category": "Sport",
       "location": "Côte Atlantique",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "src": "/images/loader-2.png",
+      "src": "/images/DSC_0755%20copie.JPG",
       "title": "Ligne d'horizon",
       "category": "Paysage",
       "location": "Bretagne",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "src": "/images/loader-3.png",
+      "src": "/images/DSC_1807%20copie.JPG",
       "title": "Vitesse & mouvement",
       "category": "Action",
       "location": "Finistère",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "src": "/images/section-1.jpg",
+      "src": "/images/DSC_2368%20copie.JPG",
       "title": "Relief & lumière",
       "category": "Nature",
       "location": "Arrière-pays",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "src": "/images/section-2.jpg",
+      "src": "/images/DSC_2640%20copie.JPG",
       "title": "Ambiance urbaine",
       "category": "Urbain",
       "location": "Centre-ville",
@@ -47,7 +47,7 @@
     },
     {
       "id": 6,
-      "src": "/images/section-3.jpg",
+      "src": "/images/DSC_6532%20copie.JPG",
       "title": "Sentier côtier",
       "category": "Reportage",
       "location": "Bord de mer",

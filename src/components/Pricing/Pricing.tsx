@@ -86,7 +86,7 @@ export default function Pricing() {
       <div className={styles.pricing__imageSection}>
         <div className={styles.pricing__imageWrapper}>
           <Image
-            src="/images/section-2.jpg"
+            src="/images/DSC_7871%20copie.JPG"
             alt="Photographie"
             fill
             style={{ objectFit: 'cover' }}

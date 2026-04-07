@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
         <div className={styles.footer__section}>
-          <h3 className={styles.footer__logo}>TL</h3>
+          <h3 className={styles.footer__logo}>UTOPIA</h3>
           <p className={styles.footer__tagline}>
             Photographe & Vidéaste
           </p>
@@ -56,7 +56,7 @@ export default function Footer() {
 
       <div className={styles.footer__bottom}>
         <p className={styles.footer__copyright}>
-          © {currentYear} TL Photography. Tous droits réservés.
+          © {currentYear} UTOPIA Photography. Tous droits réservés.
         </p>
       </div>
     </footer>

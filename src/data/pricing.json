@@ -11,7 +11,7 @@
       "startingPrice": "à partir de 500€",
       "subtitle": "Idéal pour une visibilité rapide et efficace",
       "features": [
-        "1 vidéo courte de mise en avant (≈ 30 secondes)",
+        "1 vidéo courte de mise en avant (≈ 1 minute)",
         "1 post carrousel (photos & vidéos)",
         "Retouche photo & montage vidéo inclus",
         "Ajout de texte à l'écran et sous-titres si voix off",
@@ -44,10 +44,11 @@
     {
       "id": "reseaux-sociaux",
       "name": "RÉSEAUX SOCIAUX",
-      "price": "à partir de 750€ / mois",
-      "startingPrice": "à partir de 750€ / mois",
+      "price": "à partir de 550€ / mois",
+      "startingPrice": "à partir de 550€ / mois",
       "subtitle": "Gestion de vos réseaux sociaux avec un rythme régulier",
       "features": [
+        "2 posts / semaine : 550€ / mois",
         "3 posts / semaine : 750€ / mois",
         "4 posts / semaine : 950€ / mois",
         "5 posts / semaine : 1150€ / mois",
